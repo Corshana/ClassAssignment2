@@ -26,10 +26,10 @@ def calculator():
     print("4. Divide")
 
     while True:
-        # Take input from the user
+        
         choice = input("Enter choice (1/2/3/4): ")
 
-        # Check if choice is one of the four options
+        
         if choice in ['1', '2', '3', '4']:
             try:
                 num1 = float(input("Enter first number: "))
@@ -48,7 +48,7 @@ def calculator():
                 result = divide(num1, num2)
                 print(f"{num1} / {num2} = {result}")
 
-            # Ask if the user wants to perform another calculation
+            
             next_calculation = input("Do you want to perform another calculation? (yes/no): ")
             if next_calculation.lower() != 'yes':
                 break
